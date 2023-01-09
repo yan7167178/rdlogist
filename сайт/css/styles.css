@@ -1,0 +1,260 @@
+/**
+ * Базовые стили для всего сайта
+ */
+body {
+	position: relative;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000;
+	min-width: 320px;
+	overflow-x: hidden;
+	height: auto;
+}
+
+
+.navbar {
+	width: 100%;
+	height: 70px;
+	box-shadow: 0 4px 10px rgba(0 , 0 , 0, .1);
+
+}
+
+.navbar .container {
+height: inherit;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.navbar-menu {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.navbar-menu li {
+	display: inline-block;
+	
+}
+
+.navbar-menu li a {
+	display: inline-block;
+	color: grey;
+	opacity: 0,6;
+	text-decoration: none;
+	padding: 10px;
+	transition: all .07s ease-in-out;
+}
+
+.navbar-menu li a:hover {
+	color: crimson;
+	opacity: 1;
+
+}
+
+
+.navbar-wrap {
+	display: flex;
+	flex-flow: row nowrap;
+
+}
+
+
+.callback {
+	margin-left: 30px;
+	padding: 10px 30px;
+	background-color: crimson;
+	border-radius: 100px;
+	color: aliceblue;
+	text-decoration: none;
+	transition: all .1s ease-in-out;
+	box-shadow: 0 4px 6px  rgba(227, 47, 15, 0.5);
+
+
+}
+
+.callback:hover {
+	transform: scale(1.04);
+	color: aliceblue;
+	box-shadow: 0 9px 9px rgba(227, 47, 15, 0.5);
+}
+
+
+
+
+.navbar-brand {
+	font-weight: 700;
+	font-size: 30px;
+	text-decoration: none;
+	color: crimson;
+	transition: all .07s ease-in-out;
+}
+
+
+.navbar-brand:hover {
+	color: grey;
+}
+
+.header {
+	position: relative;
+	min-height: 700px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+
+}
+
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0 , 0 , 0, .3);
+}
+
+
+
+.header .row {
+	min-height: 700px;
+	display: flex;
+	align-items: center;
+
+
+}
+
+.header-content {
+	text-align: center;
+	position: relative;
+	z-index: 5;
+}
+
+
+.header-content h1 {
+	font-size: 36px;
+	margin-bottom: 10px;
+	font-weight: 700;
+	color: aliceblue;
+}
+
+.header-content h4 {
+	font-size: 21px;
+	margin-bottom: 10px;
+	font-weight: 400;
+	opacity: 0.7;
+	margin-bottom: 35px;
+	color: aliceblue;
+}
+
+.btn-main {
+display: inline-block;
+padding: 10px 35px;
+font-size: 18px;
+border: none;
+background-color: aliceblue;
+color: black;
+text-transform: uppercase;
+border-radius: 5px;
+font-weight: 600;
+box-shadow: 0 5px 10px rgba(0 , 0 , 0, .4);
+}
+
+.btn-main:hover {
+	transform: scale(1.05);
+	box-shadow: 0 5px 10px rgba(0 , 0 , 0, .4);
+	transition: all .09s  ease-out;
+}
+
+
+.pop_up {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+	z-index: 2;
+	transform: translateY(-44.5%) scale(0);
+	transition: .4s ease-in-out;
+
+}
+
+.pop_up.active {
+	transform: translateY(0%) scale(100%);
+	background-color:rgba(0 , 0 , 0, .8);
+
+
+}
+
+
+
+.pop_up_container {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.pop_up_body {
+	margin: auto;
+	width: 500px;
+	border-radius: 10px;
+	background-color: white;
+	text-align: center;
+	padding: 100px 15px 110px 15px;
+	position: relative;
+}
+
+.pop_up_body p {
+	font-size: 28px;
+	font-family: Arial;
+	font-weight: 600;
+	color: black;
+	margin-bottom: 40px;
+}
+
+.pop_up_body input {
+	display: block;
+	margin: 25px auto 0px auto;
+	width: 330px;
+	padding: 17px 20px;
+	background-color: rgba(1, 5, 8, 0.336);
+	border-radius: 10px;
+	border: none;
+	font-family: 'Times New Roman';
+	font-weight: 500;
+	font-size: 18px;
+	color: rgba(38, 42, 42, 0.344);
+	
+
+}
+
+.pop_up_body input:focus {
+	outline: none;
+}
+
+.pop_up_body button {
+	cursor: pointer;
+	display: block;
+	width: 330px;
+	margin: 60px auto 0px auto;
+	padding: 20px 0px;
+	font-family: 'Times New Roman';
+	font-weight: 700;
+	font-size: 20px;
+	border: none;
+	color: rgba(240, 255, 255, 0.938);
+	border-radius: 10px;
+	background-color: red;
+}
+
+.pop_up_close {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	font-size: 21px;
+	cursor: pointer;
+}

@@ -1,0 +1,179 @@
+/**
+ * Базовые стили для всего сайта
+ */
+body {
+	position: relative;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000;
+	min-width: 320px;
+	overflow-x: hidden;
+	height: auto;
+}
+
+
+.navbar {
+	width: 100%;
+	height: 70px;
+	box-shadow: 0 4px 10px rgba(0 , 0 , 0, .1);
+
+}
+
+.navbar .container {
+height: inherit;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.navbar-menu {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.navbar-menu li {
+	display: inline-block;
+	
+}
+
+.navbar-menu li a {
+	display: inline-block;
+	color: grey;
+	opacity: 0,6;
+	text-decoration: none;
+	padding: 10px;
+	transition: all .07s ease-in-out;
+}
+
+.navbar-menu li a:hover {
+	color: crimson;
+	opacity: 1;
+
+}
+
+
+.navbar-wrap {
+	display: flex;
+	flex-flow: row nowrap;
+
+}
+
+
+.callback {
+	margin-left: 30px;
+	padding: 10px 30px;
+	background-color: crimson;
+	border-radius: 100px;
+	color: aliceblue;
+	text-decoration: none;
+	transition: all .1s ease-in-out;
+	box-shadow: 0 4px 6px  rgba(227, 47, 15, 0.5);
+
+
+}
+
+.callback:hover {
+	transform: scale(1.04);
+	color: aliceblue;
+	box-shadow: 0 9px 9px rgba(227, 47, 15, 0.5);
+}
+
+
+
+
+.navbar-brand {
+	font-weight: 700;
+	font-size: 30px;
+	text-decoration: none;
+	color: crimson;
+	transition: all .07s ease-in-out;
+}
+
+
+.navbar-brand:hover {
+	color: grey;
+}
+
+
+
+
+
+.wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 95%;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+.informBlock {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 30%;
+}
+
+.symbol {
+	border: 1px solid #d32231;
+	border-radius: 50%;
+	width: 130px;
+	height: 130px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.symbol img {
+	max-width: 80px;
+}
+
+.point {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: fixed;
+	background: #6bb5fb;
+}
+
+.point1 {
+	margin-top: -65px;
+}
+
+.point2 {
+	margin-top: 65px;
+}
+
+.point3 {
+	margin-left: -65px;
+}
+
+.point4 {
+	margin-left: 65px;
+}
+
+.informText {
+	text-align: center;
+	font-family: sans-serif;
+}
+
+.mainText {
+	text-transform: uppercase;
+	color: #e12121;
+	letter-spacing: 2px;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 25px 0 10px 0;
+}
+
+.secondText {
+	color: rgba(64, 55, 55, 0.859);
+	font-size: 15px;
+	margin: 0;
+}
+
+
